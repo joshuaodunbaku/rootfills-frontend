@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+}
+
+
+.activeLink {
+  color: #f78419 !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

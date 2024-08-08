@@ -1,0 +1,33 @@
+#myShowcase{
+  background: url("../../Assets/Img/father-son-outside-1134857.jpg") no-repeat center center;
+	background-size: cover;
+	min-height: 500px;
+  position: relative;
+  /* z-index: 2;	 */
+}
+#myShowcase img {
+  max-width: 300px;
+  width: 100%;
+  height: 400px;
+  z-index: 4;
+  position: relative;
+}
+
+.bg_grey_blue {
+  background-color: #222325;
+}
+
+.overlay{
+  background-color: wheat;
+  height: 130px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width: 578px) {
+#myShowcase{
+		/* min-height:70vh; */
+	}
+}
