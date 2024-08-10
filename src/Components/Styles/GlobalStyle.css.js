@@ -13,7 +13,6 @@ export const Hover = styled.span`
 	}
 `;
 
-
 export const GlobalStyle = createGlobalStyle`
 :root {
     ///////* COLOR  *///////
@@ -57,6 +56,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-      font-family: "Noto Sans", "Poppins", sans-serif;
+    /* font-family: "Noto Sans", "Poppins", sans-serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 `;

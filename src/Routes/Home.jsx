@@ -10,8 +10,8 @@ const Home = () => {
 			<div className="container py-3 my-5 w-md-75">
 				{/* <h3 className="fw-bold text-black">Company Name</h3> */}
 				<div className="d-flex flex-column justify=content-center align-items-center text-black py-5 text-center">
-					<h3 className="lead display-6">It's ingrained in us</h3>
-					<h3 className="fw-bold mb-2 display-3 text-success">
+					<h3 className="lead h-1 text-font">It's ingrained in us</h3>
+					<h3 className="fw-bold mb-2 display-4 text-success  text-font">
 						Transforming how the world is nourished
 					</h3>
 					<p className="my-2 fs-4">
@@ -39,6 +39,7 @@ const Home = () => {
 
 			<div className="container-fluid p-0 my-2">
 				<img
+					className="my-5"
 					src={require("../Assets/Img/pexels-photo-1608383.jpeg")}
 					alt="img"
 					width={"100%"}
@@ -66,22 +67,35 @@ const Home = () => {
 			</div>
 
 			{/* SECTION ONE */}
-			<div
-				className="d-flex flex-column align-items-center justify-content-center py-5 my-4"
-				style={{ backgroundColor: "skyblue", minHeight: "400px" }}
-			>
+			<div className="my-5 shadow-sm py-5" style={{ minHeight: "400px" }}>
 				<div className="container">
 					<div className="row align-items-center justify-content-center">
-						<div className="col-12 col-md-5 my-3 my-md-0">
-							<h3 className="display-4 fw-bold ">
-								Gifts for his body mind and spirit
-							</h3>
-							<p className="fs-5">
+						<div className="col-12 col-lg-6 my-3 my-md-0 px-5">
+							<h3 className="display-6 fw-bold">Milling excellence everyday</h3>
+							<p className="fs-5 text-font">
 								Support his goals, help him monitor his health and amplify the
-								music he loves.
+								music he loves. Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Culpa inventore blanditiis molestias quas
+								atque. Quibusdam deleniti in, eveniet modi quam quasi autem
+								adipisci corrupti officia necessitatibus vero ad iure culpa quae
+								tempore, maxime repellat facere debitis eligendi ducimus
+								aspernatur? Illo eaque mollitia autem vitae delectus explicabo,
+								sit tempora. Nulla sint culpa autem? Illo ad itaque, voluptates
+								et optio excepturi sed rerum perferendis unde quis ex
+								reprehenderit. Neque, molestias vitae! Dolore deleniti ipsum a
+								voluptates.
 							</p>
 						</div>
-						<div className="col-12 col-md-7 row">
+
+						<div className="col-12 col-lg-6">
+							<img
+								src={require("../Assets//Img/treecatapillar.jpeg")}
+								width={"100%"}
+								style={{ maxHeight: "600px" }}
+								alt=""
+							/>
+						</div>
+						{/* <div className="col-12 col-md-7 row">
 							<div className="col-4 d-flex flex-column gap-2">
 								<div>
 									<img
@@ -107,7 +121,7 @@ const Home = () => {
 									style={{ width: "100%", height: "410px" }}
 								/>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
@@ -237,7 +251,7 @@ const Home = () => {
 				style={{ backgroundColor: "white", minHeight: "100px" }}
 			>
 				<div className="w-100 lead d-flex flex-row justify-content-around align-items-center">
-					<p className="fw-normal">Company Inc.</p>
+					<p className="fw-normal">Rootfill Inc.</p>
 					<strong>2024 &copy; All rights reserved</strong>
 				</div>
 				{/* <p>Find something special, just for Dad</p> */}
