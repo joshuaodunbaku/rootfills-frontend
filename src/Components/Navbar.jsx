@@ -22,7 +22,7 @@ function NavBar() {
 						style={{ textDecoration: "none" }}
 						to={"/"}
 					>
-						ROOTFILL
+						ROOTFILLS
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
