@@ -40,9 +40,9 @@ function NavBar() {
 							className="navbar-nav nav-item p-2 link-offset-2  link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
 							style={{ fontSize: "1.22em" }}
 							eventKey={"2"}
-							onClick={() => navigate("/about")}
+							onClick={() => navigate("/products")}
 						>
-							About
+							Products
 						</Nav.Link>
 						<Nav.Link
 							className="navbar-nav nav-item p-2 link-offset-2  link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
@@ -51,6 +51,14 @@ function NavBar() {
 							onClick={() => navigate("/Services")}
 						>
 							Services
+						</Nav.Link>
+						<Nav.Link
+							className="navbar-nav nav-item p-2 link-offset-2  link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
+							style={{ fontSize: "1.22em" }}
+							eventKey={"4"}
+							onClick={() => navigate("/about")}
+						>
+							About
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

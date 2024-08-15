@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { Showcase } from "../Components/Styles/GlobalStyle.css";
 
 const Home = () => {
 	const navigate = useNavigate();
@@ -22,6 +23,7 @@ const Home = () => {
 						<Button
 							className="bg-success fw-bold rounded rounded-pill p-3 fs-5 px-5"
 							variant="dark"
+							eventKey={"4"}
 							onClick={() => navigate("about")}
 						>
 							About Us {"-"}
@@ -37,34 +39,29 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="container-fluid p-0 my-2">
-				<img
+			<Showcase
+				bg_image={require("../Assets/Img/annie-spratt-ZgHEZLVec9g-unsplash.jpg")}
+				className="container-fluid p-0 my-2 d-flex flex-column align-items-center justify-content-center text-white"
+				id="section-2"
+			>
+				{/* <img
 					className="my-5"
-					src={require("../Assets/Img/pexels-photo-1608383.jpeg")}
+					src={require("../Assets/Img/annie-spratt-ZgHEZLVec9g-unsplash.jpg")}
 					alt="img"
 					width={"100%"}
 					height={"500px"}
-				/>
-				{/* <div
-					className="d-flex flex-column align-items-center justify-content-center"
-					id="myShowcase"
-				>
-					<div className="container text-white">
-						<Row>
-							<Col sm>
-								<img
-									src={require("../Assets/Img/galaxy-s24-ultra-1.jpg")}
-									alt="image"
-									className="shadow shadow-lg"
-									// height={"100%"}
-								/>
-							</Col>
-							<Col sm></Col>
-						</Row>
-					</div>
-					<div className="overlay"></div>
-				</div> */}
-			</div>
+				/> */}
+
+				<h3 style={{ fontFamily: "cursive" }}>
+					ALL THE INGREDIENTS YOU NEED TO MAKE GOOD
+				</h3>
+				<h3 className="text-light display-3" style={{ fontFamily: "cursive" }}>
+					HAPPEN
+				</h3>
+				<button className="btn btn-lg btn-outline-light mt-5">
+					<small>LEARN MORE ABOUT OUR PRODUCT</small>
+				</button>
+			</Showcase>
 
 			{/* SECTION ONE */}
 			<div className="my-5 shadow-sm py-5" style={{ minHeight: "400px" }}>

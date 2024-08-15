@@ -12,7 +12,12 @@ export const Hover = styled.span`
 		}
 	}
 `;
-
+export const Showcase = styled.div`
+	background: linear-gradient(#000000a5, #000000ca),
+		url(${({ bg_image: image }) => image}) no-repeat center center;
+	background-size: 100%, cover;
+	height: 500px;
+`;
 export const GlobalStyle = createGlobalStyle`
 :root {
     ///////* COLOR  *///////
@@ -54,10 +59,38 @@ export const GlobalStyle = createGlobalStyle`
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     /* font-family: "Noto Sans", "Poppins", sans-serif; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  }
 
+  #overlay-wrapper{
+    position: relative;
+    height: 400px
+  }
+  #overlay-wrapper > .overlay {
+    background-color: rgb(1, 43, 1);
+    height: 300px;
+    opacity: 0.5;
+    height: 100%;
+    /* z-index: 12; */
+  }
+  #overlay-wrapper > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -12
+  }
+
+  #overlay-wrapper > .text{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    /* height: 100%; */
+    width: 100%;
+  }
+
+  #section-2{
+  }
 `;
