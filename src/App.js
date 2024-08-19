@@ -7,7 +7,9 @@ import NavBar from "./Components/Navbar";
 import Services from "./Routes/Services";
 import AboutUs from "./Routes/AboutUs";
 // Style
-import "./App.css";
+import "./Components/Styles/App.css";
+import Footer from "./Components/Footer";
+import Products from "./Routes/Products";
 
 function App() {
 	return (
@@ -17,9 +19,11 @@ function App() {
 				<Route index path="/" element={<Home />} />
 				<Route path="about" element={<AboutUs />} />
 				<Route path="services" element={<Services />} />
+				<Route path="products" element={<Products />} />
 
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

@@ -16,7 +16,7 @@ export const Showcase = styled.div`
 	background: linear-gradient(#000000a5, #000000ca),
 		url(${({ bg_image: image }) => image}) no-repeat center center;
 	background-size: 100%, cover;
-	height: 500px;
+	height: ${({ myHeight }) => myHeight || "500px"};
 `;
 export const GlobalStyle = createGlobalStyle`
 :root {
